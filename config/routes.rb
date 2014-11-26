@@ -3,6 +3,12 @@ Rails.application.routes.draw do
 
   get 'about' => 'pages#about' #about_path
 
+  get 'schedules' => 'pages#schedules' #schedules_path
+
+  get 'instructors' => 'pages#instructors' #instructors_path
+
+  get 'contacts' => 'pages#contacts' #contact_path
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

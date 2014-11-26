@@ -5,4 +5,15 @@ class PagesController < ApplicationController
   def about
   end
 
+  def schedules 
+  end
+
+  def instructors
+  end
+
+  def contacts
+  end
+
+
+
 end

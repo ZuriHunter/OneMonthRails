@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!--This is where it will hold as a standard template across all pages using embedded ruby -->
-  <title>Pinterestdemo</title>
+  <title>OMR Project</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -17,5 +17,7 @@
 		<%= yield %>
 	</div>
 
+
+  <%= render 'layouts/footer' %>
 </body>
 </html>

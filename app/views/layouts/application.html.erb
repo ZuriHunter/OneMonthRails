@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--This is where it will hold as a standard template across all pages using embedded ruby -->
   <title>Pinterestdemo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Viewport deals with how the page is going to viewed on whatever device that the user possess.  The code above is for any device such as a tablet or phone -->
 </head>
 <body>
 
-	<%= link_to "Home", root_path %>
-	<%= link_to "About Us", about_path %>
-
-	<%= yield %>
+	<%= render 'layouts/header' %>
+	<div class="container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>

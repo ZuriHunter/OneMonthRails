@@ -14,7 +14,8 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #1abc9c;
+
 }
 
 
@@ -37,3 +38,8 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+p{
+  color:white;
+}
+

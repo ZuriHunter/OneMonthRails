@@ -74,7 +74,19 @@
       </a>
     </div><!-- /.carousel -->
     <div class="container">
-		<p><%= link_to "Sign Up","#", class: "btn btn-primary btn-lg" %> OR <%= link_to "Log In", "#", class: "btn btn-primary btn-lg"%></p>
+
+
+<!-- Ruby block of code for displaying login/signup -->
+<% if user_signed_in? %>
+  <!-- If user is signed in then do not display the login/signup button -->
+    #do something
+  <% else %>
+
+		<p><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %> OR <%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-lg"%></p>
+  <!-- Else show the login/signup buttton on the page -->
+
+  <% end %>
+
 	</div>
 	<!--creates a link to wherever. Rails function"linkto" -->
 

@@ -25,6 +25,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass'
 #devise gem that allows for user accounts on application
 gem 'devise', '~> 3.4.1'
+#allows for images to be added when pins are being added
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 group :development, :test do
 	gem 'sqlite3'

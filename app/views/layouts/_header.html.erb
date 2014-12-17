@@ -23,6 +23,8 @@
         <li><%= link_to "Contact Us", contacts_path%></li>
 
         <% if user_signed_in? %>
+
+          <li> <%= link_to 'New Pin', new_pin_path %> </li>
           
           <li> <%= link_to "Account Settings", edit_user_registration_path %></li>
 

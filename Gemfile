@@ -27,6 +27,9 @@ gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.1'
 #allows for images to be added when pins are being added
 gem 'paperclip', github: 'thoughtbot/paperclip'
+#aws to store files permanently for website
+gem 'aws-sdk', '~> 1.20.0'
+
 
 group :development, :test do
 	gem 'sqlite3'
